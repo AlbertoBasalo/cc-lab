@@ -38,10 +38,21 @@ Then the log file has the new entry
 
 ### Improvements:
 
-The log can accept a formatter that can format the log entry.
+- The log can accept a formatter that can format the log entry.
 
-The log can accept a writer that can write the log entry to any other destination.
+- The log can accept a writer that can write the log entry to any other destination.
 
-The log can assign the format and writer to each level of the log.
+- The log can assign the format and writer to each level of the log.
 
 
+## Clean Implementation Requirements
+
+1 - Use proper naming conventions.
+
+2 - Write simple blocks and instructions.
+
+3 - Keep functions small.
+
+4 - Avoid primitive obsession.
+
+5 - Respect the SOLID principles.

@@ -31,12 +31,12 @@ Then the output is "yza"
 - Allow the shift to be a sequence of numbers, so that each letter can be shifted by a different amount.
 - Extract the shift number sequence form a password string char codes.
 
-## Clean Implementation
+## Clean Implementation Requirements
 
-Use proper naming conventions and clean code principles to implement the Caesar cipher algorithm.
+1 - Use proper naming conventions.
 
-Any variable name should be meaningful and self-explanatory.
+  - Any variable name should be meaningful and self-explanatory.
 
-Any function or method should start with a verb and be named after what it does.
+  - Any function or method should start with a verb and be named after what it does.
 
-Use simply short verbs for conditional flags and booleans.
+  - Use simply short verbs for conditional flags and booleans.

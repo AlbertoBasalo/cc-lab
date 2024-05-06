@@ -73,12 +73,14 @@ Then the output is "The CVV is invalid"
 
 - When valid return the credit card number masked like `**** **** **** 3456`.
 
-## Clean Implementation
+## Clean Implementation Requirements
 
-- Use proper naming conventions.
+1 - Use proper naming conventions.
 
-- Use simple blocks and structures.
+2 - Write simple blocks and instructions.
 
-- Accept only one argument per function.
+3 - Keep functions small.
 
-- Write small functions of 9 lines or less.
+  - Accept only one argument per function.
+
+  - Write functions of 9 lines or less.

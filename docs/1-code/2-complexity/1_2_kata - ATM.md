@@ -47,12 +47,14 @@ Then the ATM displays an error message
 
 - Allow the ATM to dispense coins as well
 
-## Clean Implementation
+## Clean Implementation Requirements
 
-- Use proper naming conventions.
+1 - Use proper naming conventions.
 
-- Do no nest conditional statements.
+2 - Write simple blocks and instructions.
 
-- Do not use complex operators or expressions.
+  - Do no nest conditional statements.
 
-- Try to not use else statements.
+  - Do not use complex operators or expressions.
+
+  - Try to not use else statements.

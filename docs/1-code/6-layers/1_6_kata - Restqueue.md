@@ -58,6 +58,16 @@ Then the queue is empty
 
 - Add an expiration time to the items in the queue. If an item is not retrieved in a configurable time, it is automatically removed from the queue.
 
+## Clean Implementation Requirements
 
+1 - Use proper naming conventions.
 
+2 - Write simple blocks and instructions.
 
+3 - Keep functions small.
+
+4 - Avoid primitive obsession.
+
+5 - Respect the SOLID principles.
+
+6 - Enforce a layer separation architecture.

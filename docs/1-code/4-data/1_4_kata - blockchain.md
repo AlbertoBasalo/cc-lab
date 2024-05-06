@@ -48,5 +48,20 @@ Then the blockchain is valid
 ### Improvements:
 
 - Chain.Difficulty: The number of leading zeros that the hash of a block must have to be valid.
+
 - Block.Nonce: A number that is incremented to find a valid hash.
+
+## Clean Implementation Requirements
+
+1 - Use proper naming conventions.
+
+2 - Write simple blocks and instructions.
+
+3 - Keep functions small.
+
+4 - Avoid primitive obsession.
+
+  - Use data structures to store the blocks and the blockchain.
+
+  - Use clases to add functionality to the blocks and the blockchain.
 
