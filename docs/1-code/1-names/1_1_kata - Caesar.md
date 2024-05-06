@@ -35,8 +35,28 @@ Then the output is "yza"
 
 1 - Use proper naming conventions.
 
-  - Any variable name should be meaningful and self-explanatory.
+  - Use tools to enforce naming conventions and style.
+
+  - Use spaces to clarify expressions.
+
+  - Use only one empty line as a separator between blocks of code.
+
+  - Limit the length of lines to 80-120 characters.
+
+  - Use descriptive names for variables, functions, and classes.
+
+  - Allow well-known abbreviations like i for index or id for identifier.
+
+  - Use the same naming conventions for all elements.
+
+  - No magic numbers or strings.
+
+  - No technical jargon.
 
   - Any function or method should start with a verb and be named after what it does.
 
   - Use simply short verbs for conditional flags and booleans.
+
+  - Have a vocabulary for the project.
+
+  - Don`t write comments that explain what could be done with a better name.

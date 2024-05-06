@@ -70,4 +70,16 @@ Then the queue is empty
 
 5 - Respect the SOLID principles.
 
-6 - Enforce a layer separation architecture.
+6 - Apply a layer separation architecture.
+
+  - Avoid complex dependency graphs between classes.
+
+  - Classes are encapsulated in modules.
+
+  - Modules should solve a business or technical concern.
+
+  - Take care of the dependency flow between modules.
+
+  - Start with a layered architecture, and evolve it as needed.
+
+  - Use tools to enforce layering rules.

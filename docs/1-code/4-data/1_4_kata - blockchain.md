@@ -61,7 +61,23 @@ Then the blockchain is valid
 
 4 - Avoid primitive obsession.
 
-  - Use data structures to store the blocks and the blockchain.
+  - Avoid global variables
 
-  - Use clases to add functionality to the blocks and the blockchain.
+  - Avoid primitives
+
+  - Prefer composition over inheritance
+
+  - Avoid large structures
+
+  - Encapsulate data and behavior in classes
+
+  - Reduce the number of collaborators of each class.
+
+  - Reduce the number of consumers of each class.
+
+  - Don´t talk to strangers.
+
+  - High cohesion (use your data) and low coupling (need few collaborators)
+
+  - Keep classes small (below 100 instructions)
 

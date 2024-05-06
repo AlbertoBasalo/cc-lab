@@ -53,8 +53,22 @@ Then the ATM displays an error message
 
 2 - Write simple blocks and instructions.
 
-  - Do no nest conditional statements.
+  - Write many simple expressions
 
-  - Do not use complex operators or expressions.
+  - Avoid deeply nested parentheses and mix of operators
+
+  - Have temporary variables for complex expressions
+
+  - Early exit for invalid or trivial cases
+
+  - Avoid nested control structures
+
+  - Simple positive conditionals
 
   - Try to not use else statements.
+
+  - No nested ternary operators or arrow functions
+
+  - Keep blocks simple and small (1-4 lines)
+
+  - keep cyclomatic complexity below 10

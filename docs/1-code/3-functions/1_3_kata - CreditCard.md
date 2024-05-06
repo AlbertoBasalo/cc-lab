@@ -81,6 +81,20 @@ Then the output is "The CVV is invalid"
 
 3 - Keep functions small.
 
-  - Accept only one argument per function.
+  - Do one thing
 
-  - Write functions of 9 lines or less.
+  - Keep functions small (4-9 lines)
+
+  - Use only one level of abstraction
+
+  - Use descriptive verbs and names
+
+  - Reduce arguments
+
+  - Ask or tell, don't mix
+
+  - Encapsulate side effects
+
+  - Avoid switch statements by using lookup tables
+
+  - Avoid using null by using guard clauses or default values
