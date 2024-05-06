@@ -12,11 +12,15 @@ When reaching the end of the alphabet, the cipher restarts at the beginning (wra
 Given a the string "abc"
 When the Caesar cipher is applied with a shift of 1
 Then the output is "bcd"	
+```
 
+```gherkin
 Given a the string "hal"
 When the Caesar cipher is applied with a shift of 1
 Then the output is "ibm"
+```
 
+```gherkin
 Given a the string "xyz"
 When the Caesar cipher is applied with a shift of 1
 Then the output is "yza"

@@ -32,11 +32,15 @@ The blockchain has the following methods:
 Given a blockchain
 When the blockchain is created
 Then the blockchain has a genesis block
+```
 
+```gherkin
 Given a blockchain
 When a block is added to the blockchain
 Then the blockchain has a new block
+```
 
+```gherkin
 Given a blockchain
 When the blockchain is validated
 Then the blockchain is valid

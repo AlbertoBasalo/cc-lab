@@ -1,4 +1,4 @@
-# Valid Credit Card Kata
+# Credit Card Kata
 
 ## Specifications
 

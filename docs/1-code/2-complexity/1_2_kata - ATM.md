@@ -19,15 +19,21 @@ The maximum amount that can be withdrawn is 1000.
 Given the ATM has a balance of 5000
 When the user requests 1000
 Then the ATM dispenses 10 bills of 100
+```
 
+```gherkin
 Given the ATM has a balance of 5000
 When the user requests 150
 Then the ATM dispenses 1 bill of 100 and 1 bill of 50
+```
 
+```gherkin
 Given the ATM has a balance of 5000
 When the user requests 125
 Then the ATM dispenses 1 bill of 100, 1 bill of 20 and 1 bill of 5
+```
 
+```gherkin
 Given the ATM has a balance of 5000
 When the user requests 1001
 Then the ATM displays an error message
