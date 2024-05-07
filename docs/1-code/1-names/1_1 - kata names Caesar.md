@@ -9,12 +9,6 @@ When reaching the end of the alphabet, the cipher restarts at the beginning (wra
 ### Acceptance Criteria:
 
 ```gherkin
-Given a the string "abc"
-When the Caesar cipher is applied with a shift of 1
-Then the output is "bcd"	
-```
-
-```gherkin
 Given a the string "hal"
 When the Caesar cipher is applied with a shift of 1
 Then the output is "ibm"
@@ -25,6 +19,19 @@ Given a the string "xyz"
 When the Caesar cipher is applied with a shift of 1
 Then the output is "yza"
 ```
+
+```gherkin
+Given a the string "abc"
+When the Caesar cipher is applied with a shift of 2
+Then the output is "cde"
+```
+
+```gherkin
+Given a the string "abc"
+When the Caesar cipher is applied with a shift of 26
+Then the output is "abc"
+```
+
 
 ### Improvements:
 - Treat uppercase and lowercase letters as distinct characters (i.e. A and a are different)
