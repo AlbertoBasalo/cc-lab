@@ -1,4 +1,4 @@
-// ? Prefer positive names
+// * Prefer positive names
 
 const isNotEmpty = Math.random() > 0.5; // ! hasValue is more positive
 // ! someone could do very bad things with this
