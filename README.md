@@ -1,14 +1,14 @@
 # 🧼 cc-lab
 Clean Code laboratory
 
-> [Laboratorio de ejemplo](https://github.com/albertobasalo/cc-lab) para cursos y talleres de [Código Limpio](https://albertobasalo.notion.site/Clean-code-t-cnicas-para-escribir-mejor-c-digo-874929129a894e969d24295db05e046a) impartidos en Español por [Alberto Basalo](https://albertobasalo.dev)
+> [Clean Code samples an docs](https://github.com/albertobasalo/cc-lab) para cursos y talleres de [Código Limpio](https://albertobasalo.notion.site/Clean-code-t-cnicas-para-escribir-mejor-c-digo-874929129a894e969d24295db05e046a) impartidos en Español por [Alberto Basalo](https://albertobasalo.dev)
 
 > [!NOTE]
-> Este proyecto dispone de ejemplos en TypeScript
+> This project has examples in TypeScript
 > 
-> El contenido es apto para cualquier lenguaje de programación
+> Content is suitable for any programming language
 
-## Artículos (en inglés)
+## Companion articles
 
 - [10 commandments to naming and writing clean code with TypeScript](https://albertobasalo.medium.com/10-commandments-to-naming-and-writing-clean-code-with-typescript-4d46c205a5d2)
 
