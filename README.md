@@ -6,7 +6,15 @@ Clean Code laboratory
 > [!NOTE]
 > Este proyecto dispone de ejemplos en TypeScript
 > 
-> El contendo es apto para cualquier lenguaje de programación
+> El contenido es apto para cualquier lenguaje de programación
+
+## Artículos (en inglés)
+
+- [10 commandments to naming and writing clean code with TypeScript](https://albertobasalo.medium.com/10-commandments-to-naming-and-writing-clean-code-with-typescript-4d46c205a5d2)
+
+- [Write Clean TypeScript with the Rule of ONE for Methods and Functions.](https://albertobasalo.medium.com/functions-rule-one-326ba019a8dd)
+
+- [Data models in TypeScript, from primitive obsession to clean entities.](https://albertobasalo.medium.com/evolution-of-data-models-from-primitive-to-clean-entities-in-typescript-5d45aaee0542)
 
 ---
 
