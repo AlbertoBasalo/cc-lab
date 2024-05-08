@@ -1,6 +1,9 @@
+// * Return early for invalid or trivial cases
+
 function isPrime(n: number): boolean {
-	if (n > 0) {
-		if (n > 1) {
+  if (n > 0) {
+    if (n > 1) {
+      // ! avoid nesting by returning early for 0 and 1
 			for (let i = 2; i < n; i++) {
 				if (n % i === 0) return false;
 			}

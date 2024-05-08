@@ -1,18 +1,11 @@
-export type Client = {
-	id: string;
-	status: "VIP" | "regular" | "defaulter";
-};
+import { Client, Invoice } from "./types";
 
-export type Invoice = {
-	date: Date;
-	clientId: string;
-	total: number;
-};
+
 // Simulating an async function to get clients
 const getClients = (): Promise<Client[]> => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
-      resolve([{ id: "1", status: "VIP" }, { id: "2", status: "regular" }]);
+      resolve([{ id: '1', status: 'VIP', orders: [] }]);
 		}, 1000);
 	});
 };
@@ -21,7 +14,15 @@ const getClients = (): Promise<Client[]> => {
 const getInvoicesForClient = (client: string): Promise<Invoice[]> => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
-			resolve([{ date: new Date(), clientId: client, total: Math.random() * 2000}]);
+      resolve([{
+        orderId: '1',
+        date: new Date(),
+        clientId: client,
+        subTotal: 1000,
+        discount: 100,
+        tax: 200,
+        total: 1100
+      }]);
 		}, 1000);
 	});
 };

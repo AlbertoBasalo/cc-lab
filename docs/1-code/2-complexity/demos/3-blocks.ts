@@ -1,38 +1,8 @@
-export type client = {
-	id: string;
-	status: "VIP" | "regular" | "defaulter";
-	orders: Order[];
-};
+// * Extract blocks of code into functions (with good names) to improve readability and maintainability
 
-export type Order = {
-	id: string;
-	status: "pending" | "completed";
-	date: Date;
-	lines: OrderLine[];
-};
+import { Client, Shipment, Invoice } from "./types";
 
-export type OrderLine = {
-	product: string;
-	quantity: number;
-	price: number;
-};
-
-export type Shipment = {
-	orderId: string;
-	lines: OrderLine[];
-};
-
-export type Invoice = {
-	orderId: string;
-	date: Date;
-	clientId: string;
-	subTotal: number;
-	discount: number;
-	tax: number;
-	total: number;
-};
-
-function processMonthlyOrders(clients: client[]) {
+function processMonthlyOrders(clients: Client[]) {
 	for (const client of clients) {
 		if (client.status !== "defaulter") {
 			for (const order of client.orders) {
@@ -44,7 +14,8 @@ function processMonthlyOrders(clients: client[]) {
 						orderId: order.id,
 						lines: order.lines,
 					};
-					if (client.status === "VIP") {
+          if (client.status === "VIP") {
+            // ! do you know how deep you are diving?
 						console.log("Package as a deluxe shipment", shipment);
 						console.log("Send shipment by express courier", shipment);
 						console.log("Include a gift card");
@@ -73,7 +44,8 @@ function processMonthlyOrders(clients: client[]) {
 						total,
 					};
 					console.log("Send invoice to client", invoice);
-					console.log("Send invoice to accounting", invoice);
+          console.log("Send invoice to accounting", invoice);
+          // ! do you know how what this brace closes?
 				}
 			}
 		} else {
