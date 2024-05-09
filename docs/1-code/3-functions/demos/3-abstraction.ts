@@ -1,4 +1,5 @@
-// ❌
+// ToDo: better example of bad code mixing low-level and high-level knowledge
+
 function getAvailablePlaces(tripId: string) {
 	// 🤢 low-level knowledge exposed
 	const queryTrips = `select capacity from trips where tripId=${tripId}`;
