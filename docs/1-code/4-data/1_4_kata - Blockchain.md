@@ -10,7 +10,7 @@ A block has the following properties:
 - Timestamp: The timestamp when the block was created.
 - Data: The data that the block stores.
 - Previous Hash: The hash of the previous block in the blockchain.
-- Hash: The hash of the block.
+- Hash: The hash of the block. (can be calculated adding the index, timestamp, data length, and previous hash)
 
 There is a special block called the genesis block that has blank data and a hash of `0`. This block is the first block in the blockchain and it is added when the blockchain is created.
 
@@ -46,6 +46,10 @@ When the blockchain is validated
 Then the blockchain is valid
 ```
 ### Improvements:
+
+- Add a hash to the blockchain itself on creation.
+
+- Block.Hash: The hash of the block is calculated using the SHA256 algorithm.
 
 - Chain.Difficulty: The number of leading zeros that the hash of a block must have to be valid.
 
