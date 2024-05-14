@@ -1,4 +1,4 @@
-// * Too much primitives, too few about the problem domain
+// ! Too much primitives, too few about the problem domain
 
 // ! Redundant naming
 const clientName = "Mark Gates";

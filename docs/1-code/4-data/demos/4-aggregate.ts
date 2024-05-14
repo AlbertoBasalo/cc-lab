@@ -1,7 +1,7 @@
 // * Entities can be aggregated in complex hierarchies
 
-import { PaymentVO } from "./2-vo";
-import { Card, Client, Payment } from "./3-entity";
+import type { PaymentVO } from "./2-vo";
+import type { Card, Client, Payment } from "./3-entity";
 
 export class ClientAggregate {
   // * a client can have multiple cards
@@ -12,7 +12,7 @@ export class ClientAggregate {
   constructor(
     public readonly client: Client,
     private preferredCard: Card
-  ) {}
+  ) { }
 
   public addCard(card: Card, isPreferred: boolean) {
     this.cards.push(card);
@@ -34,7 +34,7 @@ export class ClientPaymentsAggregate {
   private payments: PaymentVO[] = [];
 
   // * we can aggregate an entity or another aggregate
-  constructor(public readonly client: ClientAggregate) {}
+  constructor(public readonly client: ClientAggregate) { }
 
   public performPayment(payment: Payment) {
     const card = this.client.getPreferredCard();
@@ -42,7 +42,7 @@ export class ClientPaymentsAggregate {
     this.payments.push(payment.paymentData);
   }
   // * avoids direct access to the payments
-  public getPayments(): PaymentVO[]{
+  public getPayments(): PaymentVO[] {
     return [...this.payments];
   }
 }
