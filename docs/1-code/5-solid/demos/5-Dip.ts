@@ -1,45 +1,28 @@
 // ! Dependency Inversion Principle, is sometimes defined on top of the OCP and IoC principles
 
-export interface Payment {
-	pay(paymentInfo: unknown): void;
-}
+import { type Payment, createPaymentMethod } from "./2-Ocp";
 
-export class CreditCardPayment implements Payment {
-	pay(paymentInfo: unknown) {
-		console.log("pay with credit card", paymentInfo);
+// * The BookingsService class is now decoupled from the Payments classes
+class BookingsService {
+	// * Can be injected with any class that implements the Payment interface
+	constructor(private payment: Payment) {}
+
+	book(activity: unknown, client: unknown, places: number) {
+		console.log("validate places");
+		const amount = 0; // calculate amount
+		const booking = {
+			activity,
+			client,
+			places,
+			amount,
+			status: "pending",
+		};
+		this.payment.pay(booking);
 	}
 }
-export class BankTransferPayment implements Payment {
-	pay(paymentInfo: unknown) {
-		console.log("pay with bank transfer", paymentInfo);
-	}
-}
-export class PaypalPayment implements Payment {
-	pay(paymentInfo: unknown) {
-		console.log("pay with paypal", paymentInfo);
-	}
-}
 
-export type PaymentMethod = "credit" | "transfer" | "paypal";
-
-const paymentMethods: { [key in PaymentMethod]: () => Payment } = {
-	credit: () => new CreditCardPayment(),
-	transfer: () => new BankTransferPayment(),
-	paypal: () => new PaypalPayment(),
-};
-
-export function createPaymentMethod(method: PaymentMethod) {
-	const createMethod = paymentMethods[method];
-	if (createMethod) {
-		return createMethod();
-	}
-	throw new Error("Invalid payment method");
-}
-
-// * the main function got a payment object from the factory
-// Could be a more sophisticated injection system
-
-function main() {
-	const payment = createPaymentMethod("credit");
-	payment.pay("payment info");
-}
+// * The control goes to the caller, which decides which payment method to use
+const paymentMethod = createPaymentMethod("credit");
+const bookingsService = new BookingsService(paymentMethod);
+// * The BookingsService is used without knowing which payment method is used
+bookingsService.book("activity", "client", 2);
